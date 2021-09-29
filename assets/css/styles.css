@@ -42,28 +42,34 @@ header nav {
 nav li {
     display: inline-block;
 }
-
+/* Main Site Navigation Link Styles */
 nav li a {
     text-decoration: none;
     color:#291aeb;
 }
 
+/* Main Header Description List : Overwrite Padding */
+header section {
+    padding-left: 0px;
+}
+
+/* Main Header Description List  */
 header section {
     list-style-type: none;
     text-align: center;
 }
-
+/* Main Header Description List Items */
 header section li {
     list-style-type: none;
     text-align: center;
     font-size: 28px;
     line-height: 90px;
 }
-
+/* Main Header Line Through Title  */
 header section li:nth-child(1) {
     text-decoration: line-through;
 }
-
+/* Last List Item Shape */
 #theVoid {
     width: 120px;
     height: 10px;
@@ -72,12 +78,12 @@ header section li:nth-child(1) {
     margin: 0 auto;
 }
 
-
-
+/* Center Page Content */
 main {
     margin: 0 auto;
 }
 
+/* Grid Display Settings  */
 #projects, #contact {
     margin-bottom: 20%;
     display: grid;
@@ -85,7 +91,7 @@ main {
     grid-template-columns: [col-1] 8% [col-2] 16% [col-3] 8% [col-4] 50% [col-5] auto;
 }
 
-
+/* Grid Sections Title Alignment */
 #projects h2, #contact h2 {
     grid-row-start: row-1;
     grid-row-end: row-2;
@@ -94,6 +100,7 @@ main {
     text-align: left;
 }
 
+/* Shapes Added for Extra Pop  */
 .box-pop {
     height: 25%;
     width: 42%;
@@ -104,7 +111,7 @@ main {
     grid-column-start: col-2;
     grid-column-end: col-5;
 }
-/* Browser Containers :: Selecting Every 2nd Section, Starting at the First */
+/* Browser Containers :: Selecting Every 2nd Section, Starting at the First (Projects & Contact) */
 section:nth-child(2n + 1) figure {
     grid-row-start: row-3;
     grid-column-start: col-2;
@@ -118,9 +125,7 @@ section:nth-child(2n + 1) figure {
     /* display: flex;
     align-items: center; */
 }
-
-/* Browser Container Nav  */
-
+/* Browser Containers (Projects & Contact) - Imitation Nav */
 section:nth-child(2n+1) figure nav {
     width: 100%;
     height: 16%;
@@ -131,6 +136,7 @@ section:nth-child(2n+1) figure nav {
     background-color: #291aeb;
 }
 
+/* Browser Containers (Projects & Contact) - symbols imitation */
 section:nth-child(2n+1) figure p {
     font-family: 'Open Sans', sans-serif;
     font-size: 28px;
@@ -139,10 +145,14 @@ section:nth-child(2n+1) figure p {
     margin: 0px 2px;
     display: inline-block;
 }
+/* Browser Containers (Projects & Contact) - Inner Page */
+.page {
+    width: 100%;
+    height: 300px;
+    background: #FFF;
+}
 
-
-
-
+/* Mini-Browser Row 1 Text on Hover */
 section:nth-child(1) figure article p {
     font-family: 'Open Sans', sans-serif;
     display: inline-block;
@@ -151,51 +161,45 @@ section:nth-child(1) figure article p {
     color: white;
     margin: 0px 2px;
 }
+/* Mini-Browser Navigation Imitation  */
 .mini-nav {
     height: 16%;
     background-color: #291aeb;
 }
+/* Mini-Browser Navigation Sybols Imitation  */
 .mini-nav p {
     font-size: 12px;
 }
-
-
+/* Mini-Browser Page Container  */
 .mini-page {
     background: rgba(255, 255, 255, 24%);
     width: 100%;
     height: 100%;
 }
+/* Mini-Browser Link */
 .mini-page a {
     visibility: hidden;
     text-decoration: none;
     color:#fff;
 }
-
+/* Mini-Browser Shape on Hover & Focus */
 .mini-page:hover, .mini-page:focus {
     background: #291aeb;
-    content: "";
     height: 100%;
     display: inline-block;
+    cursor: pointer;
+    box-shadow: 8px 8px #FF0078;
+}
+/* Mini-Browser Links on Hover & Focus */
+.mini-page:hover a, .mini-page:focus a {
+    visibility: visible;
     font-family: 'courier-prime', Courier, monospace;
     font-size: 28px;
     text-align: center;
-    cursor: pointer;
-    box-shadow: 8px 8px #FF0078;
-    
+    height: 100%;
 }
-.mini-page:hover a, .mini-page:focus a {
-    visibility: visible;
-}
-    
 
-/* ~~~ PAGE CONTENT ~~~ */
 
-.page
-{
-   width: 100%;
-   height: 300px;
-   background: #FFF;
-}
 
 
 /* Mini Browser General Styles */
@@ -213,7 +217,7 @@ section:nth-child(1) article:nth-child(1) {
     height: 63%;
 }
 
-/* Projects (Mini-Browsers) That ARE NOT the First  */
+/* Projects (Mini-Browsers) That ARE NOT the First (2nd Row) */
 section:nth-child(1) article:nth-child(n+2) {
     height: 125px;
     width: 30%;
@@ -222,31 +226,16 @@ section:nth-child(1) article:nth-child(n+2) {
 }
 
 
-/* About Section */
-
+/* About Section Container */
 section:nth-child(2) {
     margin: 2% 12%;
     position: relative;
-
 }
-
-section:nth-child(2) h2 {
+/* About Section Title */
+section:nth-child(2) h2, article {
     position: relative;
 }
-
-section:nth-child(2) article {
-    position: relative;
-}
-section:nth-child(2) blockquote {
-    border: 3px solid;
-    box-shadow: 8px 8px #291aeb;
-    width: 63%;
-    z-index: 0;
-    position: absolute;
-    left: 36%;
-    padding: 8%
-}
-
+/* About Section Paragraph  */
 section:nth-child(2) p {
     color:#291bea;
     background: #fff; 
@@ -277,7 +266,7 @@ section:nth-child(2) img {
 
 
 
-/* Media Queries  */
+/* Media Queries for Mobile */
 
 @media only screen and (max-width: 768px) {
 
