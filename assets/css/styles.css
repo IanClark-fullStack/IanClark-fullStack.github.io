@@ -1,0 +1,348 @@
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 1% 3%;
+    border-right: 3px solid #000;
+    border-left: 3px solid #000;
+}
+
+h1, h2, h3, h4, h5, h6, header p, header span, nav, header section {
+    font-family: 'courier-prime', Courier, monospace;
+}
+
+h2 {
+    font-size: 320%;
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+
+header, header section, footer, #projects {
+    border-top: 3px solid #000;
+  
+}
+
+header p, header span {
+    font-size: 28px;
+    font-weight: 900;
+    display: inline-block;
+}
+
+h1 {
+    font-size: 110px;
+    text-align: center;
+}
+
+header nav {
+    float: right;
+    margin-right: 3%;
+    margin-top: 3%;
+    font-size: 22px;
+}
+nav li {
+    display: inline-block;
+}
+
+nav li a {
+    text-decoration: none;
+    color:#291aeb;
+}
+
+header section {
+    list-style-type: none;
+    text-align: center;
+}
+
+header section li {
+    list-style-type: none;
+    text-align: center;
+    font-size: 28px;
+    line-height: 90px;
+}
+
+header section li:nth-child(1) {
+    text-decoration: line-through;
+}
+
+#theVoid {
+    width: 120px;
+    height: 10px;
+    background: #000;
+    border-radius: 96%;
+    margin: 0 auto;
+}
+
+
+
+main {
+    margin: 0 auto;
+}
+
+#projects, #contact {
+    margin-bottom: 20%;
+    display: grid;
+    grid-template-rows: [row-1] 16% [row-2] 8% [row-3] 95%;
+    grid-template-columns: [col-1] 8% [col-2] 16% [col-3] 8% [col-4] 50% [col-5] auto;
+}
+
+
+#projects h2, #contact h2 {
+    grid-row-start: row-1;
+    grid-row-end: row-2;
+    grid-column-start: col-2;
+    grid-column-end: col-6;
+    text-align: left;
+}
+
+.box-pop {
+    height: 25%;
+    width: 42%;
+    margin-left: 14%;
+    border: 2px solid #fb8d8d;
+    box-shadow: 5px 5px #ffdbd7;
+    grid-row-start: row-2;
+    grid-column-start: col-2;
+    grid-column-end: col-5;
+}
+/* Browser Containers :: Selecting Every 2nd Section, Starting at the First */
+section:nth-child(2n + 1) figure {
+    grid-row-start: row-3;
+    grid-column-start: col-2;
+    grid-column-end: col-5;
+    margin-left: 10%;
+    width: 100%;
+    height: 500px;
+    background: white;
+    border: 4px solid #291aeb;
+    box-shadow: 30px 30px #291bea;
+    /* display: flex;
+    align-items: center; */
+}
+
+/* Browser Container Nav  */
+
+section:nth-child(2n+1) figure nav {
+    width: 100%;
+    height: 16%;
+    background-image: url('../images/browserBrush.png');
+    cursor: pointer;
+    background-size: 106%; 
+    background-position: center;
+    background-color: #291aeb;
+}
+
+section:nth-child(2n+1) figure p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    font-weight: 900;
+    color: white;
+    margin: 0px 2px;
+    display: inline-block;
+}
+
+
+
+
+section:nth-child(1) figure article p {
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 900;
+    color: white;
+    margin: 0px 2px;
+}
+.mini-nav {
+    height: 16%;
+    background-color: #291aeb;
+}
+.mini-nav p {
+    font-size: 12px;
+}
+
+
+.mini-page {
+    background: rgba(255, 255, 255, 24%);
+    width: 100%;
+    height: 100%;
+}
+.mini-page a {
+    visibility: hidden;
+    text-decoration: none;
+    color:#fff;
+}
+
+.mini-page:hover, .mini-page:focus {
+    background: #291aeb;
+    content: "";
+    height: 100%;
+    display: inline-block;
+    font-family: 'courier-prime', Courier, monospace;
+    font-size: 28px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 8px 8px #FF0078;
+    
+}
+.mini-page:hover a, .mini-page:focus a {
+    visibility: visible;
+}
+    
+
+/* ~~~ PAGE CONTENT ~~~ */
+
+.page
+{
+   width: 100%;
+   height: 300px;
+   background: #FFF;
+}
+
+
+/* Mini Browser General Styles */
+section:nth-child(1) article {
+    border: 4px solid #291aeb;
+    box-shadow: 8px 8px #291aeb;
+}
+
+/* First Project - Mini Browser Container */
+section:nth-child(1) article:nth-child(1) {
+    margin: 3% auto;
+    background-image: url('../images/dryCode.png');
+    background-size: cover;
+    width: 45%;
+    height: 63%;
+}
+
+/* Projects (Mini-Browsers) That ARE NOT the First  */
+section:nth-child(1) article:nth-child(n+2) {
+    height: 125px;
+    width: 30%;
+    margin-left: 10%;
+    display: inline-block;
+}
+
+
+/* About Section */
+
+section:nth-child(2) {
+    margin: 2% 12%;
+    position: relative;
+
+}
+
+section:nth-child(2) h2 {
+    position: relative;
+}
+
+section:nth-child(2) article {
+    position: relative;
+}
+section:nth-child(2) blockquote {
+    border: 3px solid;
+    box-shadow: 8px 8px #291aeb;
+    width: 63%;
+    z-index: 0;
+    position: absolute;
+    left: 36%;
+    padding: 8%
+}
+
+section:nth-child(2) p {
+    color:#291bea;
+    background: #fff; 
+    border: 3px solid;
+    line-height: 45px;
+    padding: 24px;
+    position: relative;
+    left: 30%;
+    width: 71%;
+    display: inline-block;
+    z-index: 1;
+}
+
+/* About Photo  */
+section:nth-child(2) div {
+    background-image: url('../images/about-mac-os9ui.jpg');
+    background-size: cover;
+    z-index: 1;
+    height: 308px;
+    width: 350px;
+    position: absolute;
+    top: 108px;
+    left: -15px;
+}
+
+
+
+
+
+
+
+
+/* Media Queries  */
+
+@media only screen and (max-width: 768px) {
+
+    /* Header Adjustments */
+    h1 {
+        font-size: 50px;
+        margin: 30% 0px 15% 0px;
+    }
+    header ul {
+        margin: 0 auto;
+        padding: 0px;
+    }
+    header section li {
+        font-size: 22px;
+        line-height: 70px;
+    }
+
+    #projects {
+        grid-template-columns: [col-1] 1% [col-2] 98%;
+        grid-template-rows: [row-1] 38% [row-2] 8% [row-3] 95%;
+        }
+        section:nth-child(1) figure {
+            grid-column-start: col-1;
+            width: 92%;
+            height: 69%;
+            box-shadow: 8px 8px #291aeb;
+            margin-left: 1%;
+
+        }
+        section:nth-child(1) figure nav {
+            height: 10%;
+        }
+        section:nth-child(1) figure nav p {
+            font-size: 90%;
+        }
+
+        .page {
+            height: 80%;
+        }
+
+        /* Inner Browser Readjust */
+        section:nth-child(1) article:nth-child(1) {
+            width: 48%;
+            height: 50%;
+        }
+
+        /* Inner Browser Hover and Focus  */
+
+        .mini-page:hover, .mini-page:focus {
+            box-shadow: 3px 3px #ff0078;
+            font-size: 92%;
+        }
+
+        section:nth-child(1) article {
+            box-shadow: 3px 3px #291bea; 
+            width: 34%;
+            border: 2px solid #291bea;
+        
+        }
+
+        /* Inner 2nd Row Browsers  */
+        section:nth-child(1) article:nth-child(n+2) {
+            height: 38%;
+        }
+}
