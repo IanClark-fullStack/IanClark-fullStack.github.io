@@ -2,12 +2,16 @@
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 1% 3%;
-    border-right: 3px solid #000;
-    border-left: 3px solid #000;
+    border: 3px solid #000;
+    cursor: url('../images/arrow.png', auto);
 }
 /* Set Headings and Titles to Courier Prime */
 h1, h2, h3, h4, h5, h6, header p, header span, nav, header section {
     font-family: 'courier-prime', Courier, monospace;
+}
+/* Snippet Before Main Content  */
+h6 {
+    margin-left: 5px;
 }
 
 /* Section Titles  */
@@ -20,6 +24,11 @@ h2 {
 header, header section, footer, #projects {
     border-top: 3px solid #000;
 }
+/* Header Initials Margin */
+header p {
+    margin-left: 10px;
+}
+
 /* Header Initials  */
 header p, header span {
     font-size: 28px;
@@ -35,17 +44,30 @@ h1 {
 header nav {
     float: right;
     margin-right: 3%;
-    margin-top: 3%;
+    margin-top: 0px;
     font-size: 22px;
+    width: 42%;
 }
 /* Main Site Navigation List Items */
 nav li {
     display: inline-block;
+    margin-left: 5%;
 }
 /* Main Site Navigation Link Styles */
 nav li a {
     text-decoration: none;
-    color:#291aeb;
+    color:#000;
+    font-weight: 400;
+    font-size: 22px;
+}
+/* Main Site Navigation Link Hover Styles */
+nav li a:hover {
+    text-decoration: underline;
+    color:#000;
+    cursor: url('/assets/images/Select.png', auto);
+    font-weight: 400;
+    padding-bottom: 3px;
+    font-size: 22px;
 }
 
 /* Main Header Description List : Overwrite Padding */
@@ -85,7 +107,7 @@ main {
 
 /* Grid Display Settings  */
 #projects, #contact {
-    margin-bottom: 20%;
+    margin: 20% 0px;
     display: grid;
     grid-template-rows: [row-1] 16% [row-2] 8% [row-3] 95%;
     grid-template-columns: [col-1] 8% [col-2] 16% [col-3] 8% [col-4] 50% [col-5] auto;
@@ -228,7 +250,7 @@ section:nth-child(1) article:nth-child(n+2) {
 
 /* About Section Container */
 section:nth-child(2) {
-    margin: 2% 12%;
+    margin: 22% 12%;
     position: relative;
 }
 /* About Section Title */
@@ -259,9 +281,18 @@ section:nth-child(2) img {
     left: -15px;
 }
 
+/* Contact Section Link Styles  */
+#contact ul {
+    margin-left: 24%;
+    list-style-type: none;
+    line-height: 76px;
+}
 
-
-
+#contact a {
+    font-family: 'courier-prime', monospace;
+    font-size: 38px;
+    color: #f46ef6;
+}
 
 
 
@@ -278,6 +309,11 @@ section:nth-child(2) img {
     /* Overwrite Default List Padding */
     header ul {
         padding: 0px;
+    }
+    /* Main Site Header  */
+    header nav {
+        width: 56%;
+        font-size: 18px;
     }
     /* Decrease Header Description Size */
     header section li {
@@ -346,4 +382,5 @@ section:nth-child(2) img {
         display: block;
         margin-top: 93%;
     }   
+
 }
