@@ -262,9 +262,7 @@ section:nth-child(2) p {
 }
 
 /* About Photo  */
-section:nth-child(2) div {
-    background-image: url('../images/about-mac-os9ui.jpg');
-    background-size: cover;
+section:nth-child(2) img {
     z-index: 1;
     height: 308px;
     width: 350px;
