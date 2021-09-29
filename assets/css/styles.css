@@ -1,45 +1,44 @@
-
+/* Border Styles Applied to Body */
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 1% 3%;
     border-right: 3px solid #000;
     border-left: 3px solid #000;
 }
-
+/* Set Headings and Titles to Courier Prime */
 h1, h2, h3, h4, h5, h6, header p, header span, nav, header section {
     font-family: 'courier-prime', Courier, monospace;
 }
 
+/* Section Titles  */
 h2 {
     font-size: 320%;
     font-weight: 400;
     font-style: italic;
 }
-
-
-
+/* Add Borders for Grid-Like View  */
 header, header section, footer, #projects {
     border-top: 3px solid #000;
-  
 }
-
+/* Header Initials  */
 header p, header span {
     font-size: 28px;
     font-weight: 900;
     display: inline-block;
 }
-
+/* Header Title */
 h1 {
     font-size: 110px;
     text-align: center;
 }
-
+/* Main Site Navigation  */
 header nav {
     float: right;
     margin-right: 3%;
     margin-top: 3%;
     font-size: 22px;
 }
+/* Main Site Navigation List Items */
 nav li {
     display: inline-block;
 }
@@ -296,22 +295,21 @@ section:nth-child(2) img {
         line-height: 70px;
     }
 
-    #projects {
+    #projects #contact {
         grid-template-columns: [col-1] 1% [col-2] 98%;
         grid-template-rows: [row-1] 38% [row-2] 8% [row-3] 95%;
         }
-        section:nth-child(1) figure {
+        section:nth-child(2n+1) figure {
             grid-column-start: col-1;
             width: 92%;
             height: 69%;
             box-shadow: 8px 8px #291aeb;
             margin-left: 1%;
-
         }
-        section:nth-child(1) figure nav {
+        section:nth-child(2n+1) figure nav {
             height: 10%;
         }
-        section:nth-child(1) figure nav p {
+        section:nth-child(2n+1) figure nav p {
             font-size: 90%;
         }
 
@@ -343,4 +341,24 @@ section:nth-child(2) img {
         section:nth-child(1) article:nth-child(n+2) {
             height: 38%;
         }
+
+
+        /* About Section  */
+        section:nth-child(2) {
+            margin: 0px 3%;
+            padding-top: 16px;
+        }
+
+        section:nth-child(2) p {
+            margin: 0px 3%;
+            padding-top: 16px;
+            left: 0%;
+            width: 83%;
+            display: block;
+            margin-top: 93%;
+        }
+
+        
+
+        
 }
