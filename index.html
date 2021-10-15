@@ -8,52 +8,100 @@
         <title>Portfolio of Ian Clark </title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./assets/css/styles.css">
+        <!-- <link rel="stylesheet" href="./assets/css/styles.css"> -->
+        <link rel="stylesheet" href="assets/css/stylesheet.css" />
         <!-- Link to TypeKit Project Fonts-->
         <link rel="stylesheet" href="https://use.typekit.net/mjy6xim.css">
 
     </head>
-    <body>
-        <!-- Snippet Before Header -->
-        <h6>Just Trying to Throw It Back a Bit</h6>
-        <header>
+    <body class="w-11/12 mx-auto font-display">
+        
+        <header class="flex flex-col w-auto border-2 border-black font-display">
+            <!-- Snippet Before Header -->
+            <h6 class="text-xs border-b-2 border-black py-3">Just Trying to Throw It Back a Bit</h6>
             <!-- Persional Initials -->
-            <p>i<span>C</span></p>
-            <!-- Navigation Links -->
-            <nav>
-                <ul>
-                    <li><a href="#projects">Work</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+            <nav class="flex flex-row justify-between items-center py-3 border-b-2 border-black"> 
+                <h4 class="justify-start text-3xl ml-2">iC</h4>
+                <ul class="flex justify-end mx-2">
+                    <li class="mx-1"><a href="#projects">Work</a></li>
+                    <li class="mx-1"><a href="#about">About</a></li>
+                    <li class="mx-1"><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+           
+            <!-- Navigation Links -->
+            
+               
             <!-- Simple List in Place of Hero -->
-            <section>
-                <h1>Ian Clark</h1>
-                <ul>
-                    <li>Front End Web Developer,</li>
-                    <li>Bootcamper,</li>
-                    <li>Shirt Tucker</li>
-                    <li><div id="theVoid"></div></li>
-                    <li><img src="./assets/images/downArrow.gif" alt="Scrool Down" /></li>
+            <section class="flex flex-col mx-auto mt-14 text-center">
+                <h1 class="text-6xl font-display">Ian Clark</h1>
+                <ul class="font-display">
+                    <li class="my-4">Front End Web Developer,</li>
+                    <li class="my-4">Bootcamper,</li>
+                    <li class="my-4">Shirt Tucker</li>
+                    <li class="my-4 rounded-full py-1 px-4">
+                        <div class="w-1/6 mx-auto pt-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 162 18"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><ellipse cx="81" cy="9" rx="81" ry="9"/></g></g></svg>
+                        </div>
+                    </li>
+                    <li class="my-4"><img class="mx-auto" src="assets/images/downArrow.gif" alt="Scrool Down" /></li>
                 </ul>        
             </section>
         </header>
-
-
-        <!-- Main Content -->
         <main>
             <!-- Projects Section -->
-            <section id="projects">
-                <h2>Projects</h2>
+            <section class="my-10" id="projects">
+                <h2 class="text-5xl ml-8 mb-4">Projects</h2>
                 <!-- Box Shadow Accent Span -->
-                <span class="box-pop"></span>
+                <div class="z-0 ml-4 w-2/3 bg-red-300 h-5 border-2 border-bright"></div>
+                <div class="z-10 ml-6 -mt-7 w-2/3 bg-white h-5 border-2 border-bright"></div>
                 <!-- Large Browser Container -->
-                <figure>
-                    <nav>
-                        <p>X</p>
-                        <p>__</p>
-                    </nav> 
+                
+                
+                <figure class="flex flex-col w-11/12 md:w-8/12 border-2 border-blue mx-auto my-8" style="box-shadow: 8px 8px #291aeb;">
+                    <div class="h-9 bg-blue bg-browser-pattern bg-cover bg-center p2 text-xs text-white"><p class="ml-1">X _</p></div>
+                    <div class="flex flex-row w-full mx-auto">
+                        <figure id="hover-box1" class="flex flex-col border-2 border-blue mx-auto w-1/4 mt-8" style="box-shadow: 8px 8px #291aeb;">
+                            <div class="h-9 bg-blue bg-browser-pattern bg-cover bg-center p2 text-xs text-white"><p class="ml-1">X _</p></div>
+                            <div class="flex flex-col w-full mx-auto text-center">
+                                <div id="visibleInfo1" class="flex flex-col bg-contain bg-center bg-muskyTweets-pattern h-44">
+                                     
+                                </div>
+                            </div>
+                        </figure>
+                        
+
+                            
+                        </div>
+                    <div class="flex flex-row w-full mx-auto">
+                        <figure id="hover-box1" class="flex flex-col border-2 border-blue mx-auto w-1/4 mt-8" style="box-shadow: 8px 8px #291aeb;">
+                            <div class="h-9 bg-blue bg-browser-pattern bg-cover bg-center p2 text-xs text-white"><p class="ml-1">X _</p></div>
+                            <div class="flex flex-col w-full mx-auto text-center">
+                                <div id="visibleInfo1" class="flex flex-col bg-contain bg-center bg-muskyTweets-pattern h-44">
+                                     
+                                </div>
+                            </div>
+                        </figure>
+                        
+
+                            
+              
+                        <figure id="hover-box1" class="flex flex-col border-2 border-blue mx-auto w-1/4 mt-8" style="box-shadow: 8px 8px #291aeb;">
+                            <div class="h-9 bg-blue bg-browser-pattern bg-cover bg-center p2 text-xs text-white"><p class="ml-1">X _</p></div>
+                            <div class="flex flex-col w-full mx-auto text-center">
+                                <div id="visibleInfo1" class="flex flex-col bg-contain bg-center bg-muskyTweets-pattern h-44">
+                                     
+                                </div>
+                            </div>
+                        </figure>
+                        </div>
+                    </div>
+                </figure>
+                
+                
+                <article class="flex flex-col w-11/12 border-2 border-blue mx-auto mt-8" style="box-shadow: 8px 8px #291aeb;">
+                    <div class="h-9 w-auto bg-blue p2 text-xs text-white"></div>
+                </article>
                     <!-- Inner Large Browser Page -->   
                     <div class="page">
                         <!-- Mini Browser: Row 1 -->
@@ -78,43 +126,31 @@
                         </article>
                     </div>
                 </figure>
-            </section>
-            <!-- About Section -->
-            <section id ="about">
-                <article>
-                    <h2>About Ian</h2>
-                    <img src="assets/images/about-mac-os9ui.jpg" alt="Colorful Profile Image" />
-                        <p>Hi, my  name is Ian. I've had an interest in web development, creative endevours and design since high school. Currently, I am a full time, fullstack student at Northwestern Bootcamp. </p>
-                </article>
-            </section>
+                <figure class="flex flex-col w-11/12 md:w-8/12 border-2 border-blue mx-auto mt-8" style="box-shadow: 8px 8px #291aeb;">
+                    <div class="h-9 bg-blue bg-browser-pattern bg-cover bg-center p2 text-xs text-white"><p class="ml-1">X _</p></div>
+                    <div class="flex flex-col h-32 w-auto mx-auto">
+                        <div class="flex flex-row">
+                            <ul>
+                                <li id="custom-hover1">News Stock API APP</li>
+                                
+                                <li id="custom-hover2">Password Generator</li>
+                                <li><a href="https://ianclark-fullstack.github.io/passwordGenerator/">See the Live Repo</a></li>
+                                <li>Auto Save To-do List</li>
+                                <li><a href="https://ianclark-fullstack.github.io/workDayScheduler/">See the Live Repo</a></li>
+                            </ul>
 
-            <!-- Contact Section -->
-            <section id="contact">
-                <h2>Contact</h2>
-                <!-- Box Shadow Accent Span -->
-                <span class="box-pop"></span>
-                <!-- Large Browser Container -->
-                <figure>
-                    <nav>
-                        <p>X</p>
-                        <p>__</p>
-                    </nav>    
-                    <div class="page">
-                        <!-- Contact Links -->
-                        <ul>
-                            <li><a href="https://www.are.na/ian-clark-h9y5gqm3qei">Are.na</a></li>
-                            <li><a href="https://dribbble.com/Ian_Clark">dribbble</a></li>
-                            <li><a href="https://github.com/IanClark-fullStack">github</a></li>
-                            <li><a href="mailto:ianclark.creative@gmail.com">email</a></li>
-                        </ul>
-                        <!-- Links Bar -->
+                            
+                        </div>
                     </div>
                 </figure>
             </section>
-        </main>
-        <!-- Footer Thanks -->
-        <footer>
-            <h4>Thanks for looking!</h4>
-        </footer>
+
+
+       
+        </main> 
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+        <script type="text/javascript" src="assets/js/script.js">
+       
     </body>
 </html>

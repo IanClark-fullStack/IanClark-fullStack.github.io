@@ -1,0 +1,23 @@
+{
+  "name": "IanClark-fullStack.github.io",
+  "version": "1.0.0",
+  "description": "Northwestern Full Stack - Portfolio of Ian Clark",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwind build src/styles.css -o assets/css/stylesheet.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IanClark-fullStack/IanClark-fullStack.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IanClark-fullStack/IanClark-fullStack.github.io/issues"
+  },
+  "homepage": "https://github.com/IanClark-fullStack/IanClark-fullStack.github.io#readme",
+  "dependencies": {
+    "tailwindcss": "^2.2.17"
+  }
+}
