@@ -20,12 +20,12 @@
             <!-- Snippet Before Header -->
             <h6 class="text-xs border-b-2 border-black py-3">Just Trying to Throw It Back a Bit</h6>
             <!-- Persional Initials -->
-            <nav class="flex flex-row justify-between items-center py-3 border-b-2 border-black"> 
-                <h4 class="justify-start text-3xl ml-2">iC</h4>
-                <ul class="flex justify-end mx-2">
-                    <li class="mx-1"><a href="#projects">Work</a></li>
-                    <li class="mx-1"><a href="#about">About</a></li>
-                    <li class="mx-1"><a href="#contact">Contact</a></li>
+            <nav class="flex flex-row justify-between items-center py-3 border-b-2 border-black md:text-3xl"> 
+                <h4 class="justify-start text-3xl ml-2 md:text-6xl">iC</h4>
+                <ul class="flex justify-end mx-2 md:mx-8">
+                    <li class="mx-1 md:mx-8"><a href="#projects">Work</a></li>
+                    <li class="mx-1 md:mx-8"><a href="#about">About</a></li>
+                    <li class="mx-1 md:mx-8"><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
            
@@ -33,9 +33,9 @@
             
                
             <!-- Simple List in Place of Hero -->
-            <section class="flex flex-col mx-auto mt-14 text-center">
-                <h1 class="text-6xl font-display">Ian Clark</h1>
-                <ul class="font-display">
+            <section class="flex flex-col mx-auto md:my-44 mt-14 text-center">
+                <h1 class="text-6xl font-display md:text-8xl">Ian Clark</h1>
+                <ul class="font-display md:text-4xl md:leading-loose">
                     <li class="my-4">Front End Web Developer,</li>
                     <li class="my-4">Bootcamper,</li>
                     <li class="my-4">Shirt Tucker</li>
@@ -48,109 +48,80 @@
                 </ul>        
             </section>
         </header>
-        <main>
+        <main class="md:border-r-2 md:border-l-2 md:border-black">
             <!-- Projects Section -->
-            <section class="my-10" id="projects">
-                <h2 class="text-5xl ml-8 mb-4">Projects</h2>
+            <section class="my-10 md:my-0" id="projects">
+                <h2 class="text-5xl md:text-8xl ml-8 mb-4 md:pt-24 md:ml-24">Projects</h2>
                 <!-- Box Shadow Accent Span -->
-                <div class="z-0 ml-4 w-2/3 bg-red-300 h-5 border-2 border-bright"></div>
-                <div class="z-10 ml-6 -mt-7 w-2/3 bg-white h-5 border-2 border-bright"></div>
+                <div class="z-0 ml-4 w-2/3 md:w-1/3 md:ml-60 bg-red-300 h-5 border-2 border-bright"></div>
+                <div class="z-10 ml-6 -mt-7 w-2/3 md:w-1/3 md:ml-56 bg-white h-5 border-2 border-bright"></div>
                 <!-- Large Browser Container -->
-                
-                
-                <figure class="flex flex-col w-11/12 md:w-8/12 border-2 border-blue mx-auto my-8" style="box-shadow: 8px 8px #291aeb;">
+                <figure class="flex flex-col w-11/12 md:w-8/12 border-2 border-blue mx-auto my-8 md:my-24" style="box-shadow: 8px 8px #291aeb;">
                     <div class="h-9 bg-blue bg-browser-pattern bg-cover bg-center p2 text-xs text-white"><p class="ml-1">X _</p></div>
                     <div class="flex flex-row w-full mx-auto">
-                        <figure id="hover-box1" class="flex flex-col border-2 border-blue mx-auto w-1/4 mt-8" style="box-shadow: 8px 8px #291aeb;">
-                            <div class="h-9 bg-blue bg-browser-pattern bg-cover bg-center p2 text-xs text-white"><p class="ml-1">X _</p></div>
+
+                        <figure id="hover-box1" class="flex flex-col border-2 border-blue mx-auto w-1/2 md:w-1/3 mt-4" style="box-shadow: 8px 8px #291aeb;">
+                            <div class="h-4 md:h-9 bg-blue bg-browser-pattern bg-cover bg-center p2 text-xs text-white"><p class="ml-1">X _</p></div>
                             <div class="flex flex-col w-full mx-auto text-center">
-                                <div id="visibleInfo1" class="flex flex-col bg-contain bg-center bg-muskyTweets-pattern h-44">
+                                <div id="visibleInfo1" class="flex flex-col h-28 md:h-44 bg-cover bg-center bg-muskyTweets-pattern bg-no-repeat">
+                                     
+                                </div>
+                            </div>
+                        </figure>
+                    </div>
+
+                    <div class="flex flex-row w-full my-4 md:my-6 mx-auto">
+                        <figure id="hover-box2" class="flex flex-col border-2 border-blue mx-auto w-5/12 md:w-1/3" style="box-shadow: 8px 8px #291aeb;">
+                            <div class="h-4 md:h-9 bg-blue bg-browser-pattern bg-cover bg-center p2 text-xs text-white"><p class="ml-1">X _</p></div>
+                            <div class="flex flex-col w-full mx-auto text-center">
+                                <div id="visibleInfo2" class="h-28 md:h-44 bg-cover bg-center bg-todo-pattern bg-no-repeat">
                                      
                                 </div>
                             </div>
                         </figure>
                         
-
-                            
-                        </div>
-                    <div class="flex flex-row w-full mx-auto">
-                        <figure id="hover-box1" class="flex flex-col border-2 border-blue mx-auto w-1/4 mt-8" style="box-shadow: 8px 8px #291aeb;">
-                            <div class="h-9 bg-blue bg-browser-pattern bg-cover bg-center p2 text-xs text-white"><p class="ml-1">X _</p></div>
+                         <figure id="hover-box3" class="flex flex-col border-2 border-blue mx-auto w-5/12 md:w-1/3" style="box-shadow: 8px 8px #291aeb;">
+                            <div class="h-4 md:h-9 bg-blue bg-browser-pattern bg-cover bg-center p2 text-xs text-white"><p class="ml-1">X _</p></div>
                             <div class="flex flex-col w-full mx-auto text-center">
-                                <div id="visibleInfo1" class="flex flex-col bg-contain bg-center bg-muskyTweets-pattern h-44">
-                                     
-                                </div>
+                                <div id="visibleInfo3" class="h-28  md:h-44 bg-cover bg-center bg-password-Pattern bg-no-repeat"></div>
                             </div>
                         </figure>
-                        
-
-                            
-              
-                        <figure id="hover-box1" class="flex flex-col border-2 border-blue mx-auto w-1/4 mt-8" style="box-shadow: 8px 8px #291aeb;">
-                            <div class="h-9 bg-blue bg-browser-pattern bg-cover bg-center p2 text-xs text-white"><p class="ml-1">X _</p></div>
-                            <div class="flex flex-col w-full mx-auto text-center">
-                                <div id="visibleInfo1" class="flex flex-col bg-contain bg-center bg-muskyTweets-pattern h-44">
-                                     
-                                </div>
-                            </div>
-                        </figure>
-                        </div>
                     </div>
-                </figure>
-                
-                
-                <article class="flex flex-col w-11/12 border-2 border-blue mx-auto mt-8" style="box-shadow: 8px 8px #291aeb;">
-                    <div class="h-9 w-auto bg-blue p2 text-xs text-white"></div>
-                </article>
-                    <!-- Inner Large Browser Page -->   
-                    <div class="page">
-                        <!-- Mini Browser: Row 1 -->
-                        <article>
-                            <div class="mini-page">
-                                <a href="https://ianclark-fullstack.github.io/bootcampPortfolioPiece1/" alt="Go To GitHub Repo" target="blank">Dry Code Project</a>
-                            </div>
-                        </article>
 
-                        <!-- Mini Browser: Row 2, Col 1 -->
-                        <article>
-                            <div class="mini-page">
-                                <a href="https://ianclark-fullstack.github.io/bootcampPortfolioPiece1/" alt="Go To GitHub Repo" target="blank">Dry Code Project</a>
-                            </div>
-                        </article>
+                </div>
+            </figure>
+        </section>
 
-                        <!-- Mini Browser: Row 2, Col 2 -->
-                        <article>
-                            <div class="mini-page">
-                                <a href="https://ianclark-fullstack.github.io/bootcampPortfolioPiece1/" alt="Go To GitHub Repo" target="blank">Dry Code Project</a>
-                            </div>
-                        </article>
-                    </div>
+        <section class="flex flex-row md:flex-col my-24 md:my-44 border-black border-t-2 border-b-2" id="about">
+            <article class="flex flex-col md:flex-row md:py-44">
+                <h2 class="text-5xl md:text-8xl md:ml-24 ml-8 mb-4">About</h2>
+                <figure class="flex flex-col md:flex-row md:w-1/3 z-0 border-2 border-blue mx-auto md:mx-8 bg-cover bg-no-repeat h-72" style="box-shadow: 8px 8px #291aeb; background-image: url('assets/images/about-mac-os9ui.jpg');">
+                    <div class="h-9 bg-blue bg-browser-pattern bg-cover bg-center p2 text-xs text-white md:w-full"><p class="ml-1">X _</p></div>
                 </figure>
-                <figure class="flex flex-col w-11/12 md:w-8/12 border-2 border-blue mx-auto mt-8" style="box-shadow: 8px 8px #291aeb;">
+                <div class="flex flex-col md:flex-row md:w-3/12 p-4 text-blue">Hi, my name is Ian. I've had an interest in web development, creative endevours and design since high school. Currently, I am a full time, fullstack student at Northwestern Bootcamp.</div>
+            </article>
+        </section>
+
+        <section class="my-10 pb-10 md:border-black md:border-b-2" id="contact">
+            <article class="flex flex-col relative">
+                <h2 class="text-5xl ml-8 mb-4 md:text-8xl md:ml-24">Contact</h2>
+                <figure class="flex flex-col w-10/12 md:w-8/12 z-0 border-2 border-blue mx-auto" style="box-shadow: 8px 8px #291aeb;">
                     <div class="h-9 bg-blue bg-browser-pattern bg-cover bg-center p2 text-xs text-white"><p class="ml-1">X _</p></div>
-                    <div class="flex flex-col h-32 w-auto mx-auto">
-                        <div class="flex flex-row">
-                            <ul>
-                                <li id="custom-hover1">News Stock API APP</li>
-                                
-                                <li id="custom-hover2">Password Generator</li>
-                                <li><a href="https://ianclark-fullstack.github.io/passwordGenerator/">See the Live Repo</a></li>
-                                <li>Auto Save To-do List</li>
-                                <li><a href="https://ianclark-fullstack.github.io/workDayScheduler/">See the Live Repo</a></li>
-                            </ul>
-
-                            
-                        </div>
-                    </div>
+                    <ul class="mx-6 md:mx-32 my-12 text-3xl md:text-5xl leading-10 md:leading-loose">
+                        <li><a href="https://www.are.na/ian-clark-h9y5gqm3qei">Are.na</a></li>
+                        <li><a href="https://dribbble.com/Ian_Clark">dribbble</a></li>
+                        <li><a href="https://github.com/IanClark-fullStack">github</a></li>
+                        <li><a href="mailto:ianclark.creative@gmail.com">email</a></li>
+                        <li><a href="https://www.linkedin.com/in/ian-clark-964641130/">linkedin</a></li>
+                        <li><a href="assets/images/IanClark-Resume2021.pdf" download>hire me! (resume)</a></li>
+                    </ul>
                 </figure>
-            </section>
+            </article>
+        </section>
+    </main> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-
-       
-        </main> 
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
-        <script type="text/javascript" src="assets/js/script.js">
+    <script type="text/javascript" src="assets/js/script.js">
        
     </body>
 </html>
