@@ -20,6 +20,29 @@ var $hoverBox1 = $('#hover-box1');
 var $hoverBox2 = $('#hover-box2');
 var $hoverBox3 = $('#hover-box3');
 
+// Project 1 ID's
+var $projectUnderlay = $('#project-underlay');
+var $projectOverlay = $('#project-overlay');
+var projectTitle = $('#project-title');
+var projectLinks = $('#project-links');
+
+// Project 2 ID's
+var $projectUnderlay2 = $('#project-underlay2');
+var $projectOverlay2 = $('#project-overlay2');
+var projectTitle2 = $('#project-title2');
+var projectLink2 = $('#project-link2');
+
+// Project 3 ID's
+var info1 = $('#info1');
+var info2 = $('#info2');
+var info3 = $('#info3');
+
+var $projectUnderlay3 = $('#project-underlay3');
+var $projectOverlay3 = $('#project-overlay3');
+var projectTitle3 = $('#project-title3');
+var projectLink3 = $('#project-link3');
+
+
 
 var $customSection1 = $(('<h4 class="text-xl md:text-3xl mt-4 block">News / Stock Api</h4>' +
 '<ul class="leading-loose">' +
@@ -52,6 +75,47 @@ var $customSection3 = $(('<h4 class="text-xl md:text-3xl mt-4 block">Password Ge
 '</ul>'
 ));
 
+var $repoLink = $('<a>');
+$repoLink.attr('href', 'https://ianclark-fullstack.github.io/muskytweets/');
+$repoLink.text('check the live repo');
+var projectHover = $('#projectHover');
+$projectUnderlay.hover(
+    function() {
+        // Project 1
+        $projectUnderlay.attr('class', 'w-3/5 bg-bright border-2 border-blue ml-5');
+        $projectOverlay.attr('class', 'mx-auto h-28 md:h-44 bg-cover bg-center bg-blue bg-no-repeat border-2 border-blue transform -translate-x-2 -translate-y-3');
+        info1.attr('class', 'block');
+    }, function() {
+        $projectUnderlay.attr('class', 'w-3/5 bg-blue border-2 border-bright ml-5');
+        $projectOverlay.attr('class', 'mx-auto h-28 md:h-44 bg-cover bg-center bg-muskyTweets-pattern bg-no-repeat border-2 border-blue transform -translate-x-2 -translate-y-3');
+        info1.attr('class', 'hidden');
+    }
+);
+$projectUnderlay2.hover(
+    function() {
+        // Project 2
+        $projectUnderlay2.attr('class', 'w-2/5 bg-bright border-2 border-blue');
+        $projectOverlay2.attr('class', 'mx-auto h-28 md:h-44 bg-cover bg-center bg-blue bg-no-repeat border-2 border-blue transform -translate-x-2 -translate-y-3');
+        info2.attr('class', 'block');
+    }, function() {
+        $projectUnderlay2.attr('class', 'w-2/5 bg-blue border-2 border-bright');
+        $projectOverlay2.attr('class', 'mx-auto h-28 md:h-44 bg-cover bg-center bg-password-Pattern bg-no-repeat border-2 border-blue transform -translate-x-2 -translate-y-3');
+        info2.attr('class', 'hidden');
+    }
+);
+$projectUnderlay3.hover(
+    function() {
+        // Project 3
+        $projectUnderlay3.attr('class', 'w-2/5 bg-bright border-2 border-blue ml-5');
+        $projectOverlay3.attr('class', 'mx-auto h-28 md:h-44 bg-cover bg-blue border-2 border-blue transform -translate-x-2 -translate-y-3');
+        info3.attr('class', 'block');
+    }, function() {
+        $repoLink.attr('class', 'hidden');
+        $projectUnderlay3.attr('class', 'w-2/5 bg-blue border-2 border-bright ml-5');
+        $projectOverlay3.attr('class', 'mx-auto h-28 md:h-44 bg-cover bg-center bg-todo-pattern bg-no-repeat border-2 border-blue transform -translate-x-2 -translate-y-3');
+        info3.attr('class', 'hidden');
+    }
+);
 
 
 $customHover1.attr('class', 'w-1/2');
