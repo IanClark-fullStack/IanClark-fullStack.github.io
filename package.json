@@ -1,7 +1,7 @@
 {
   "name": "professional-portfolio",
   "version": "0.1.0",
-  "homepage": "https://ianclark-fullstack.github.io/professional-portfolio",
+  "homepage": "https://ianclark-fullstack.github.io",
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.4.2",
@@ -26,7 +26,6 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -b master -d build"
-
   },
   "eslintConfig": {
     "extends": [
